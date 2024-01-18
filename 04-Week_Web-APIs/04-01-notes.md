@@ -1,5 +1,10 @@
 # Web APIs
 
+## Interface 
+
+An interface is a point of connection / communication between two systems. This could be a doorknob that allows a human to interface with a door.
+It could be a vehicle that has a steering wheel, shifter and pedals. In software, an interface is usually a set of methods that a type may implement.
+
 ## API
 
 Application Programming Interface
