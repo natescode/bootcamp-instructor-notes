@@ -1,3 +1,0 @@
-# Notes
-
-## Selector Variables
