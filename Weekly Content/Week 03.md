@@ -1,0 +1,19 @@
+---
+tags:
+  - javascript
+  - frontend
+---
+- console log
+- variable
+- primitive types
+- logical comparison operators
+- (bitwise operators?)
+- conditinals
+- arrays
+- iteration
+- functions
+- scope
+- methods
+- objects
+- object methods
+- object THIS

@@ -1,0 +1,15 @@
+---
+tags:
+  - typescript
+  - oop
+---
+- Typescript setup
+- variables
+- arrays
+- functions
+- types
+- objects
+- anonymous functions
+- interface
+- prototype
+- classes

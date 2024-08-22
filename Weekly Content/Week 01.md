@@ -1,0 +1,20 @@
+---
+tags:
+  - command_line
+  - html
+  - css
+  - week01
+  - git
+---
+- command line
+- git
+- html
+- attributes
+- css color
+- css units 
+- css font
+- css selectors
+- html display property
+- CSS box model
+- CSS positioning
+- git guide

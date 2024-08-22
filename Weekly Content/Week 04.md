@@ -1,0 +1,17 @@
+---
+tags:
+  - javascript
+  - frontend
+---
+- window object
+- DOM traversal
+- attributes
+- create & append
+- timers
+- event listener
+- preventing default
+- keyboard events
+- bubbling 
+- attributes
+- local storage
+- local storage objects

@@ -1,0 +1,21 @@
+---
+tags:
+  - css
+  - git
+  - frontend
+---
+
+- media query screen
+- flex box layout
+- responsive design
+- flexbox
+- box styling
+- CSS resets
+- typography
+- pseudo classes
+- pseudo elements
+- form styles
+- wireframing
+- CSS selectors
+-  CSS variables / custom props
+-

@@ -1,0 +1,1 @@
+This is where we have access to the JavaScript of the web page. We can run JavaScript from here as well.

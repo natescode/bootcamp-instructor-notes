@@ -1,0 +1,11 @@
+- NodeJS
+- Arrow function
+- functional loops (FP methods find, replace, filter)
+- Rest and Spread
+- Obj Destructoring
+- process argv
+- Read / Write File
+- Append File
+- Modularization
+- npm 
+- Colors
