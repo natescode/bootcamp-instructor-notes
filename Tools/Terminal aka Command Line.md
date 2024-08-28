@@ -26,4 +26,4 @@ cd Desktop
 
 Terminals will have some default programming language or shell language that is used. 
 
-`cd`, `ls`, `touch` are all shell commands.
+`cd`, `echo`, `ls`, `touch` are all shell commands.
