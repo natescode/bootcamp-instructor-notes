@@ -1,0 +1,8 @@
+"id","book_name","in_stock","book_price","id-2","price"
+1,"The Great Gatsby",True,1,1,1
+2,"Huckleberry Finn",True,3,3,5
+3,"100 Years of Solitude",False,5,5,15
+4,"Things Fall Apart",False,1,1,1
+5,"Crime and Punishment",True,2,2,2
+6,"Moby Dick",True,4,4,10
+7,"Decameron",False,1,1,1
