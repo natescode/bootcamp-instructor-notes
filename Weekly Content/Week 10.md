@@ -22,7 +22,7 @@ choco install postgresql --params '/Password:test' --params-global`
 
 ## pgAdmin
 
-Is a UI to connect to a database. There are others like MySQL workbench or DBeaver. 
+Is a UI to connect to a database. There are others like MySQL workbench or DBeaver. I'm using this instead of the `psql` CLI tool that is mentioned in the lesson. Professionally, software engineers and database administrators use Database Clients like pgAdmin.
 
 Here is what my `natescode` database looks like. You can right click to make a new database.
 ![[pgadmin_1.png]]
