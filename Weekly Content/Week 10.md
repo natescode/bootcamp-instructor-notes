@@ -55,7 +55,9 @@ SELECT * FROM produce ORDER BY name asc;
 
 ## POSTGRES changes from DATABASE to SCHEMA etc
 
-Had to make some changes to lesson provided SQL because that was based on MYSQL.
+Had to make some changes to lesson provided SQL because the lesson uses the command line app `psql` to connect to the Postgres database instead of `pgadmin`. I feel that `pgadmin` is easier and more practical, it is what I use professionally. Even DB admins use pgAdmin (or other clients) instead of the command line to connect to databases.
+
+Furthermore, the lesson creates a lot of different databases but I'll have you all create schemas instead. Postgres' schema = MySQL database (more or less for our uses).
 
 ```postgresql
 -- WAS: DROP DATABASE IF EXISTS grocery_db
@@ -63,6 +65,7 @@ DROP SCHEMA IF EXISTS grocery_db;
 -- WAS: CREATE DATABASE grocery_db;
 CREATE SCHEMA grocery_db;
 -- WAS: \c grocery_db;
+-- this switches to the `grocery_db` SCHEMA
 SET search_path TO grocery_db;
 
 CREATE TABLE customers (
@@ -208,4 +211,44 @@ This means give ALL records, null foreign key or not of the left table (favorite
 
 #### Right JOIN
 
+Give all the right table (book_prices) even if there is no book with that price (favorite_books)
+
 ![[right_join_results.png]]
+
+## Connect to Database from Node / Express
+
+We can use the [pg](https://www.npmjs.com/package/pg) npm package to connect to Postgres.
+
+### Install pg
+
+`npm i pg`
+
+### Connect from Express
+
+There are a few ways actually according to the documentation. Connecting directly with `client` from the `pg` package or creating a connection pool. Connection pools are just what they sound like, they are a group of connections that can be reused. This is more efficient. Database connections do use memory and multiple connections allow multiple queries to run in parallel. 
+
+### Client
+
+```javascript
+import { Client } from 'pg';
+
+const client = new Client();
+
+await client.connect(); // have the client connect
+
+const res = await client.query('SELECT $1::text as message', ['Hello world!']);
+
+console.log(res.rows[0].message); // Hello world!
+
+await client.end(); // close the client connection
+```
+
+### Pool (what the lessons use)
+
+```javascript
+import pg from 'pg';
+const { Pool } = pg;
+const pool = new Pool();
+
+pool.query(`SELECT * FROM users WHERE id = %1`, [13], ()=> console.log('query completed')}'
+```
