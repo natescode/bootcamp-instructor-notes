@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "587771f0-e192-4ee0-8f08-d4530983f169",
+		"name": "30 API CRUD REVIEW",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7830731"
+	},
+	"item": [
+		{
+			"name": "home",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all friends",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/friends",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"friends"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new friend",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"Nathan\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/friend",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"friend"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete friend by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/friend/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"friend",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
