@@ -43,13 +43,15 @@ function getId() {
     return id
 }
 
-// GET ALL friends
+// GET localhost:8080/friends
+// Get ALL friends
 app.get('/friends', function (request, response) {
     // status 200 means all is good
     // sends friends object back as json text
     response.status(200).json(friends)
 })
 
+// GET localhost:8080/friends/1
 // GET a single friend by id
 app.get('/friend/:id', function (request, response) {
     const friend = friends.filter((friend) => friend.id === request.params.id)

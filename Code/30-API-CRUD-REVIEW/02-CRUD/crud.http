@@ -1,0 +1,16 @@
+### GET ALL friends
+GET http://localhost:8080/friends
+
+### GET friend with id 1
+GET http://localhost:8080/friend/1
+
+### CREATE new friend named "Nathan"
+POST http://localhost:8080/friend HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"Nathan"
+}
+
+### DELETE friend with id 3 "Charlie"
+DELETE http://localhost:8080/friend/3
